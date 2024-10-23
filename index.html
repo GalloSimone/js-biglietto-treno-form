@@ -12,19 +12,19 @@
 <body>
   <div class="container p-5">
     <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <form >
+    <form id="biglietto-form">
     <div class="row g-3 p-5">
         <div class="col-sm-3">
             <label for="fullname">Nome e Cognome</label>
-          <input type="text" class="form-control" placeholder="nome e cognome" aria-label="nome e cognome">
+          <input id="input-fullname" required type="text" class="form-control" placeholder="nome e cognome" />
         </div>
         <div class="col-sm-3">
             <label for="">Km da percorrere</label>
-          <input type="text" class="form-control" placeholder="km da percorrere" aria-label="20">
+          <input required      type="number" class="form-control" placeholder="km da percorrere"  id="input-km" min="1" />
         </div>
         <div class="col-sm-3">
             <label for="age">Fascia d'età</label>
-            <select class="form-select" aria-label="Default select example" >
+            <select class="form-select" aria-label="Default select example" id="input-age" >
                 <option selected>minorenne</option>
                 <option value="1">maggiorenne</option>
                 <option value="2">over 65</option>
@@ -33,8 +33,8 @@
       </div>
     </form>
      <section>
-       <button  type="button"   class="btn btn-secondary">genera </button>
-       <button type="button"  class="btn btn-secondary ">annulla</button>
+       <button  type="button"   class="btn btn-secondary"  id="create-button">genera </button>
+       <button type="button"  class="btn btn-secondary" id="cancel-button">annulla</button>
      </section>
 
   </div>
