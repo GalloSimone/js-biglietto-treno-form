@@ -10,7 +10,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  
+  <div class="container p-5">
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <form >
+    <div class="row g-3 p-5">
+        <div class="col-sm-3">
+            <label for="fullname">Nome e Cognome</label>
+          <input type="text" class="form-control" placeholder="nome e cognome" aria-label="nome e cognome">
+        </div>
+        <div class="col-sm-3">
+            <label for="">Km da percorrere</label>
+          <input type="text" class="form-control" placeholder="km da percorrere" aria-label="20">
+        </div>
+        <div class="col-sm-3">
+            <label for="age">Fascia d'età</label>
+            <select class="form-select" aria-label="Default select example" >
+                <option selected>minorenne</option>
+                <option value="1">maggiorenne</option>
+                <option value="2">over 65</option>
+              </select>
+        </div>
+      </div>
+    </form>
+     <section>
+       <button  type="button"   class="btn btn-secondary">genera </button>
+       <button type="button"  class="btn btn-secondary ">annulla</button>
+     </section>
+
+  </div>
     
 
 

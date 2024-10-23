@@ -25,3 +25,14 @@
     width: 1000px;
     max-width: 100%;
   }
+
+  .form-select{
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+  }
+  .btn{
+    color: #b81450;
+    background-color: #cbcbcb;
+    font-size: 1rem;
+    margin-left: 15px;
+  }
