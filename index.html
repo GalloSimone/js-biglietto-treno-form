@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="bg-danger">
   <div class="container p-5">
-    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-    <form id="biglietto-form">
+    <h1 class="p-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <form id="biglietto-form" class="bg-white">
     <div class="row g-3 p-5">
         <div class="col-sm-3">
             <label for="fullname">Nome e Cognome</label>
@@ -32,10 +32,40 @@
         </div>
       </div>
     </form>
-     <section>
+     <section class="bg-white pb-3">
        <button  type="button"   class="btn btn-secondary"  id="create-button">genera </button>
        <button type="button"  class="btn btn-secondary" id="cancel-button">annulla</button>
      </section>
+
+     <section id="output-card">
+      <h1 class="pl-5 pt-5">IL TUO BIGLIETTO</h1>
+      <H2>DETTAGLI PASSEGGERO</H2>
+      <!--<div class="row bg-white p-4">
+       <div class="col-4 bg-secondary p-3">
+       <h4>NOME PASSEGGERO</h4>
+       <p>fullname</p>
+       </div>
+       <div class="col-2">
+      <h5>offerta</h5>
+      <p>biglietto x</p>
+       </div>
+       <div class="col-2 ">
+       <h5>carrozza</h5>
+       <p>carrozza x</p>
+       </div>
+       <div class="col-2">
+       <h5>codice cp</h5>
+       <p>codice x</p>
+       </div>
+       <div class="col-2">
+       <h5>costo biglietto</h5>
+       <p>costo x</p>
+       </div>
+      </div>
+     </section>-->
+
+
+
 
   </div>
     

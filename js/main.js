@@ -1,20 +1,18 @@
-/**MILESTONE 1:
-Iniziamo implementando il programma senza alcuna estetica: usando esclusivamente due input e un bottone (non stilizzati),
- realizziamo le specifiche scritte sopra. La risposta finale (o output) sarà anch'essa da scrivere in console.
-
-MILESTONE 2:
-Solo una volta che il milestone 1 sarà completo e funzionante allora realizzeremo un form in pagina in cui
- l'utente potrà inserire i dati e visualizzare il calcolo finale con il prezzo.
-Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali,
- per indicare i centesimi sul prezzo). Questo richiederà un minimo di ricerca.*/
 
 
-const fullnameInput= document.getElementById(`input-fullname`)
+const fullnameInput = document.getElementById(`input-fullname`)
 const kmInput = document.getElementById(`input-km`)
 const ageInput = document.getElementById(`input-age`)
 const createButton = document.getElementById(`create-button`)
 const cancelButton = document.getElementById(`cancel-button`)
 const bigliettoForm = document.getElementById(`biglietto-form`)
+const outputCardEl = document.getElementById(`output-card`)
+
+
+
+bigliettoForm.addEventListener(`create`), (event)=>{
+    
+}
 
 
 const calcprice=()=>{
@@ -65,6 +63,33 @@ const carriageNUmber=trainCarriagGeneration();
 
 const trainNumber=trainNumberGeneration ();
 
+outputCardEl.innerHTML=htmlCard;
+const htmlCard=
+
+      <div class="row bg-white p-4">
+       <div class="col-4 bg-secondary p-3">
+       <h4>NOME PASSEGGERO</h4>
+       <p>${fullname}</p>
+       </div>
+       <div class="col-2">
+      <h5>offerta</h5>
+      <p>${offer}</p>
+       </div>
+       <div class="col-2 ">
+       <h5>carrozza</h5>
+       <p>${carriageNUmber}</p>
+       </div>
+       <div class="col-2">
+       <h5>codice cp</h5>
+       <p>${trainNumber}</p>
+       </div>
+       <div class="col-2">
+       <h5>costo biglietto</h5>
+       <p>${totalPice}</p>
+       </div>
+      </div>
+   
+   
 
 
 
